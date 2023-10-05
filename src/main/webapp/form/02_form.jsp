@@ -40,7 +40,6 @@ input:hover {
 	}//validate() end
 </script>
 
-
 <body>
 	<h3>성적 입력</h3>
 
