@@ -29,7 +29,6 @@
 	int aver = (kor + eng + mat) / 3;
 	
 	
-	
 	/* out.println("요청IP:" + request.getRemoteAddr()); */ 
 
  	Connection con = null;
