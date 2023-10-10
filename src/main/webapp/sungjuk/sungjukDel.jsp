@@ -20,7 +20,6 @@
 		<a href="sungjukList.jsp">[성적목록]</a>
 	</p>
 	
-	
 	<%
 		//예)sungjukDel.jsp?sno=21
 		out.print(request.getParameter("sno"));
