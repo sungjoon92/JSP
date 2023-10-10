@@ -23,7 +23,7 @@
 	
 	<%
 		//예)sungjukRead.jsp?sno=21
-		out.print(request.getParameter("sno"));
+		out.print(request.getParameter("sno"));		
 		int sno=Integer.parseInt(request.getParameter("sno"));
 		
 		Connection con = null;
@@ -42,14 +42,18 @@
 		
 		sql.append(" SELECT sno, uname, kor, eng, mat, aver, addr, wdate");
 		sql.append(" FROM sungjuk");
-		sql.append(" ORDER BY wdate DESC ");
+		sql.append(" WHERE sno= ?");
+		
 
 		pstmt = con.prepareStatement(sql.toString());
-		rs = pstmt.executeQuery();
+		pstmt.setInt(1, sno);
 		
+		
+		rs = pstmt.executeQuery();		
 		if(rs.next()){
 %>
 			<table>
+			
 			<tr>
 				<th>이름</th>
 				<td><%=rs.getString("uname") %></td>
@@ -91,7 +95,7 @@
 			</tr>
 			<tr>
 				<th>작성일</th>
-				<td><%=rs.getString("wdate") %></td>
+				<td><%=rs.getString("wdate")%></td>
 			</tr>
 			</table>
 			<br><br>
