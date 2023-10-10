@@ -7,7 +7,7 @@
 <title>sungjukForm.jsp</title>
 </head>
 <body>
-
+ 
 	<h3>성적 입력 폼</h3>
 	<p>
 		<a href="sungjukList.jsp">[성적목록]</a>
@@ -68,14 +68,11 @@
 		<tr>
 			<td colspan="2" align="center">
 				<input type="submit" value="전송">
-				<input type="reset" value="취소">
+				<input type="reset" value="다시쓰기">
 			</td>
 			<!-- 전송 end -->
 		</tr>
-		
-		
-	</table>
-
+	</table> 
 </form>
 
 </body>
