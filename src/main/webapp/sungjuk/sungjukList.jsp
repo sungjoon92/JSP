@@ -11,6 +11,19 @@
 
 <style>
 
+h3,p{
+	text-align : center;
+}
+	table{
+		width: 50%;
+		border : 1px solid black;
+		margin : 0 auto;
+		text-align : center;
+	}
+	
+	tr:nth-child(1){
+		background: gray;
+	}
 </style>
 
 <body>
@@ -83,11 +96,8 @@
 					
 			}catch(Exception e){}
 		}
-	%>
-
-
+	%> 
 </table>
-
 
 </body>
 </html>
