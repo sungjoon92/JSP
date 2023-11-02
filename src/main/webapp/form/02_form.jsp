@@ -34,7 +34,7 @@ input:hover {
 		let uname= document.getElementById("uname").value;;
 		uname=uname.trim();
 		if(uname.length<5 || uname.length>20){
-			alert("이름 5~20굴자 이내에서 입력해 주세요")
+			alert("이름 5~20글자 이내에서 입력해 주세요")
 			return false;
 		}//if end
 	}//validate() end

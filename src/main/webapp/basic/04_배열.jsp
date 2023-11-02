@@ -19,8 +19,8 @@
 .table{
 	width:80%;
 	margin:0 auto;
-	background: linear-gradient(to left, pink, skyblue);
-	border: 3px solid black;
+	background: linear-gradient(to left, pink, #fff, skyblue);
+	box-shadow: 3px 3px 10px 3px gray;
 }
 
 

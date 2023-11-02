@@ -77,13 +77,14 @@ tr:nth-child(1) {
 			<td><%=dto.getEng()%></td>
 			<td><%=dto.getMat()%></td>
 			<td><%=dto.getAver()%></td>
-			<td><%=dto.getWdate()%></td>
+			<td><%=dto.getWdate().substring(0, 10)%></td>
 		</tr>
 <%
 		} //for end
 	} //if end
 %>
 	</table>
+	
 
 </body>
 </html>

@@ -20,7 +20,7 @@
 	request.setCharacterEncoding("utf-8");
 
 	//사용자가 입력한 정보를 가져와서 변수에 담기
-	String uname = request.getParameter("uname").trim();
+	String uname = request.	getParameter("uname").trim();
 	int kor = Integer.parseInt(request.getParameter("kor").trim());
 	int eng = Integer.parseInt(request.getParameter("eng").trim());
 	int mat = Integer.parseInt(request.getParameter("mat").trim());
